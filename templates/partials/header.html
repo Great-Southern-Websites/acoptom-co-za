@@ -1,16 +1,19 @@
 {@io.quarkiverse.roq.frontmatter.runtime.model.Site site}
 <header class="site-header">
   <div class="container bar">
-    <a class="brand" href="{=site.url}">
-      <!-- BUILDER: replace with the logo image (public/images/logo.*) or a wordmark -->
-      <span class="brand-name">Aretha Coetzee Optometrists (Acoptom)</span>
+    <a class="brand" href="{=site.url}" aria-label="Aretha Coetzee Optometrists home">
+      <img class="brand-mark" src="{=site.url('images/logo.png')}" alt="ACO logo" width="512" height="512">
+      <img class="brand-word" src="{=site.url('images/wordmark.png')}" alt="Aretha Coetzee Optometrists" width="710" height="131">
     </a>
     <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle menu">
     <label for="nav-toggle" class="nav-toggle"><span></span></label>
     <nav class="site-nav" aria-label="Main navigation">
       <ul>
-        <!-- BUILDER: one <li> per page, mirroring the original site's navigation -->
         <li><a href="{=site.url}">Home</a></li>
+        <li><a href="{=site.url('services')}">Services</a></li>
+        <li><a href="{=site.url('about')}">About Us</a></li>
+        <li><a href="{=site.url('contact')}">Contact Us</a></li>
+        <li><a class="btn-book" href="https://acoptom.co.za/ac-app/">Appointment</a></li>
       </ul>
     </nav>
   </div>
