@@ -220,6 +220,7 @@ p { margin: 0 0 1rem; }
 .cta-band h2, .cta-band p { color: inherit; }
 .cta-band p { max-width: 40rem; margin-inline: auto; }
 .cta-band p a { display: inline-block; padding: 0.6rem 0.2rem; }
+.cta-band p a:not(.btn), .cta-band p a:not(.btn):hover { color: inherit; text-decoration: underline; text-underline-offset: 0.15em; }
 .cta-band .btn-outline { border-color: var(--on-primary); color: var(--on-primary); }
 .cta-band .btn-outline:hover { background: var(--on-primary); color: var(--primary-deep); }
 .quote { background: var(--bg-alt); border-left: 4px solid var(--accent); border-radius: 0 var(--radius) var(--radius) 0; padding: 1.25rem 1.5rem; margin: 1.5rem 0; font-size: 1.1rem; }
